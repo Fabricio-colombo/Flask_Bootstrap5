@@ -1,4 +1,6 @@
-from flask import Blueprint
+from flask import Blueprint, render_template
+from database.cliente import CLIENTES
+
 
 cliente_route = Blueprint('cliente', __name__)
 
@@ -16,7 +18,7 @@ Rota de Clientes
 
 @cliente_route.route('/')
 def lista_clientes():
-    pass
+    return render_template('lista_clientes.html', clientes=CLIENTES)
 
 @cliente_route.route('/', methods= ['POST'])
 def inserir_cliente():
@@ -24,15 +26,16 @@ def inserir_cliente():
 
 @cliente_route.route('/new')
 def form_cliente():
-    pass
+    return render_template('form_cliente.html')
 
 @cliente_route.route('/<int:cliente_id>')
 def detalhe_cliente(cliente_id):
-    pass
+    return render_template('detalhe_cliente.html', cliente_id=cliente_id)
+
 
 @cliente_route.route('/<int:cliente_id>/edit')
 def form_edit_cliente(cliente_id):
-    pass
+    return render_template('form_edit_cliente.html', cliente_id=cliente_id)
 
 @cliente_route.route('/<int:cliente_id>/update', methods=['PUT'])
 def atualizar_cliente(cliente_id):

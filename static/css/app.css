@@ -1,0 +1,16 @@
+h1, h2 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px;
+  background-color: #f0f6f9; /* Cor de fundo azul claro */
+  color: #2c3e50; /* Cor do texto azul escuro */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin: 20px 0; /* Adicionando margem para separação entre os títulos */
+}
+
+h1:hover, h2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
