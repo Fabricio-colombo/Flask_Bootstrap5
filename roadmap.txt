@@ -1,0 +1,3 @@
+interface grafica de login, conectada com mongodb.
+assim que fizer login, transferir para este projeto que vai ter varias coisas conectados
+com postgree
