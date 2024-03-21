@@ -1,11 +1,16 @@
-<form class="c-form" action="{{ url_for('cliente.inserir_cliente') }}" method="POST">
+<form class="c-form" 
+        action="{{ url_for('cliente.inserir_cliente') }}" 
+        method="POST"
+        c-append="#lista-clientes">
+
+
     <div class="mb-3">
         <label for="nome" class="form-label">Nome</label>
         <input type="text" class="form-control" id="nome" name="nome">
     </div>
   
     <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
+        <label id="label-target" for="email" class="form-label">Email</label>
         <input type="text" class="form-control" id="email" name="email">
     </div>
   
