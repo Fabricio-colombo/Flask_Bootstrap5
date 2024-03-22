@@ -1,3 +1,19 @@
-interface grafica de login, conectada com mongodb.
-assim que fizer login, transferir para este projeto que vai ter varias coisas conectados
-com postgree
+O projeto consiste em um site desenvolvido utilizando Python com Flask, apresentando uma interface de login.
+Os usuários têm a opção de criar uma conta e alterar suas senhas.
+O sistema de login está conectado a um banco de dados MongoDB, onde é feita a verificação das credenciais para permitir o acesso ao site.
+
+O login está configurado para rodar localmente no endereço localhost, porta 5000.
+Após o login bem-sucedido, o usuário é redirecionado para uma página de gestão, onde encontra um link para acessar o conteúdo.
+
+Ao clicar no link, o usuário é redirecionado para localhost, porta 8080, onde encontra toda a interface de gestão. 
+Esta foi desenvolvida utilizando Python, Flask, Blueprint, CRUD, Bootstrap e Cru.js. 
+A conexão da gestão é feita com um banco de dados PostgreSQL.
+
+Para garantir a segurança do sistema, será necessário implementar uma lógica de segurança adicional, 
+uma vez que a transição da porta 5000 para a 8080 está ocorrendo sem a utilização de tokens de segurança ou cookies. 
+Essa etapa de implementação da lógica de segurança pode ser realizada posteriormente, visando reforçar a proteção do sistema.
+
+
+
+
+
