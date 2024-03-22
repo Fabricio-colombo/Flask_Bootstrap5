@@ -2,7 +2,7 @@ h1, h2 {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   padding: 20px;
-  background-color: #f0f6f9; /* Cor de fundo azul claro */
+  background-color: #c7c8e5; /* Cor de fundo azul claro */
   color: #2c3e50; /* Cor do texto azul escuro */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -14,3 +14,46 @@ h1:hover, h2:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
+
+#exampleModalLabel {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #e5e6e5; 
+  background-color: #2194cd; 
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(5, 24, 231, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin: 20px 0; 
+  text-align: center;
+  padding: 20px;
+}
+
+#exibir-cliente {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #e5e6e5; 
+  background-color: #2194cd; 
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin: 20px 0; 
+  text-align: center;
+  padding: 20px;
+}
+
+#form-cliente {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffecec; 
+  background-color: #2194cd; 
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin: 20px 0; 
+  text-align: center;
+  padding: 20px;
+}
+
