@@ -46,7 +46,12 @@ def detalhe_cliente(cliente_id):
 
 @cliente_route.route('/<int:cliente_id>/edit')
 def form_edit_cliente(cliente_id):
-    return render_template('form_edit_cliente.html', cliente_id=cliente_id)
+    cliente = None
+    for c in CLIENTES:
+        if c['id'] == cliente_id:
+            cliente = c
+    
+    return render_template('form_cliente.html', cliente = cliente)
 
 @cliente_route.route('/<int:cliente_id>/update', methods=['PUT'])
 def atualizar_cliente(cliente_id):
