@@ -2,7 +2,7 @@
         {% if cliente %}
             action="{{ url_for('cliente.atualizar_cliente', cliente_id = cliente.id) }}" 
         {% else %}
-            action="{{ url_for('cliente.editar_cliente') }}" 
+            action="{{ url_for('cliente.inserir_cliente') }}" 
         {% endif %}
 
         {% if cliente %}
