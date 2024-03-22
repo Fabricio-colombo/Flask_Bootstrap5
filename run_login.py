@@ -1,8 +1,6 @@
 from login.app import create_app_login
 
 
-create_app_login()
-
 app_login = create_app_login()
 
 

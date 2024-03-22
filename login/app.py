@@ -36,11 +36,12 @@ def create_app_login():
             user_data = collection.find_one({'username': username, 'password': password})
             if user_data:
                 session['username'] = username
-                return redirect(url_for('index')) 
+                return redirect('http://127.0.0.1:8080/')
             else:
                 return render_template('login.html', error='Credenciais inválidas. Tente novamente.')
         
         return render_template('login.html')
+
 
     @app.route('/register', methods=['GET', 'POST'])
     def register():

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>Login bem-sucedido</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
 </head>
 <body>
-    <h1>Parabéns, você está logado!</h1>
-    <h2>Teste de ataque com força bruta feito com sucesso!</h2>
+    <div class="container">
+        <h1>Login feito com sucesso!</h1>
+        <p>Parabéns, você está logado. Acesse a gestão dos clientes abaixo:</p>
+        <a href="http://127.0.0.1:8080/">Acessar gestão dos clientes</a>
+    </div>
 </body>
 </html>

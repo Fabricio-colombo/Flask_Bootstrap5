@@ -1,28 +1,40 @@
-/* centralizar meu h1 e fazer ele estilozo */
+body {
+  background-color: #90ade7;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  margin-top: 100px;
+}
 
 h1 {
-  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 36px;
   font-weight: bold;
-  color: #2a0d0d;
+  color: #101ad5;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
-h2 {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #2a0d0d;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0a0155;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
-/* criar o body deixando ele em cores claras, bem suave */
+a {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
 
-body {
-  background-color: #ac7d7d;
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
+a:hover {
+  background-color: #0056b3;
 }
